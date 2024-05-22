@@ -1,0 +1,115 @@
+/* geral */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+
+/* navbar */
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+nav p{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    font-size: 1rem;
+
+}
+nav img{
+    max-width: 45px;
+}
+
+/* Home */
+#home {
+    display: flex;
+    align-items: center;
+    padding-bottom: 6rem;
+    padding-top: 6.5rem;
+    justify-content: center;
+}
+#home img{
+    max-width: 50%;
+    /* border-radius: 30px; */
+    border-radius: 45%;
+}
+
+#home-txt{
+    max-width: 30%;
+    padding-right: 5rem;
+}
+#home-txt h2{
+    font-size: 3rem;
+}
+#home-txt p{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/* header e home */
+.vermelho{
+    background-color: rgb(255, 112, 112);
+    background-position: center;
+    background-size: cover;
+    color: RGB(255, 255, 255)
+}
+
+#features{
+   text-align: center;
+}
+.features-ul{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/* div problema/solução */
+#problema {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 3rem;
+}
+#problema-txt {
+    text-align: center;
+    max-width: 40%;
+    flex: 1; 
+}
+
+#problema img {
+    max-width: 50%; 
+    height: auto; 
+    border-radius: 5%;
+}
+
+
+
+/* responsividade */
+@media (max-width: 768px) {
+    #problema {
+        flex-direction: column; /* Muda para layout vertical em telas menores */
+        text-align: center; /* Centraliza o texto em telas menores */
+    }
+
+    #problema img {
+        max-width: 100%; /* Garante que a imagem ocupe a largura total em telas menores */
+    }
+}
