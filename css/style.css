@@ -11,17 +11,34 @@ ul{
     color: rgb(255, 99, 71); /* Cor do título */
 }
 
-/* navbar */
 body{
     background-color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
+}
+
+.height{
+    height: 100vh;
+
+}
+/* navbar */
+#navbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    background-color: rgba(255, 112, 112, 0.9); /* Adapte a cor conforme necessário */
+   
 }
 nav {
     display: flex;
     justify-content: center;
     gap: 40%;
     align-items: center;
-    padding-top: 1.5rem;
+    padding-top: 1.2rem;
 }
 nav p{
     display: flex;
@@ -45,7 +62,7 @@ nav img{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 #home img{
     max-width: 50%;
@@ -90,7 +107,9 @@ nav img{
     align-items: center; 
     justify-content: space-between; 
     gap: 20px; 
-    padding: 3rem;
+    /* height: 100vh; */
+
+    padding: 0rem 3rem 0rem 3rem;
 }
 #problema-txt {
     text-align: center;
@@ -123,18 +142,6 @@ nav img{
 }
 
 
-
-/* responsividade */
-/* @media (max-width: 768px) {
-    #problema {
-        flex-direction: column; 
-        text-align: center; 
-    }
-
-    #problema img {
-        max-width: 100%; 
-    }
-} */
 
 /* Responsividade */
 @media (max-width: 768px) {
