@@ -6,6 +6,10 @@
 ul{
     list-style: none;
 }
+.titulo {
+    margin-bottom: 20px;
+    color: rgb(255, 99, 71); /* Cor do título */
+}
 
 /* navbar */
 body{
@@ -40,9 +44,8 @@ nav img{
 #home {
     display: flex;
     align-items: center;
-    padding-bottom: 6rem;
-    padding-top: 6.5rem;
     justify-content: center;
+    height: 100vh;
 }
 #home img{
     max-width: 50%;
@@ -69,9 +72,10 @@ nav img{
     background-size: cover;
     color: RGB(255, 255, 255)
 }
-
+/* div features */
 #features{
    text-align: center;
+   padding-bottom: 3rem;
 }
 .features-ul{
     align-items: center;
@@ -100,16 +104,100 @@ nav img{
     border-radius: 5%;
 }
 
+#problema p{
+    padding-bottom: 1rem;
+}
+
+/* div avalição */
+#avaliacao{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    padding-bottom: 10rem;
+}
+#avaliacao p {
+    max-width: 60%;
+}
+#avaliacao a{
+    padding-top: 1rem;
+}
+
 
 
 /* responsividade */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #problema {
-        flex-direction: column; /* Muda para layout vertical em telas menores */
-        text-align: center; /* Centraliza o texto em telas menores */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     #problema img {
-        max-width: 100%; /* Garante que a imagem ocupe a largura total em telas menores */
+        max-width: 100%; 
+    }
+} */
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    nav p {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    /* Home */
+    #home {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #home img {
+        max-width: 80%;
+    }
+
+    #home-txt {
+        max-width: 100%;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    #home-txt h2 {
+        font-size: 2rem;
+    }
+
+    #home-txt p {
+        font-size: 1.2rem;
+    }
+
+    /* Problema e Solução */
+    #problema {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    #problema img {
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    #problema-txt {
+        max-width: 100%;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    /* Features */
+    #features {
+        padding-bottom: 2rem;
+    }
+
+    .features-ul {
+        flex-direction: column;
+        gap: 2rem;
     }
 }
